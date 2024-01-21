@@ -1,0 +1,21 @@
+name: Initial Workflow
+on: [push]
+
+jobs:
+  Test Job on Windows:
+    runs-on: windows-latest
+    steps:
+      - name: Execute Statement1
+        run: Write-Host "Statement 1 Execute"
+
+      - name: Execute Statement2
+        run: Write-Host "Statement 2 Execute"
+
+  Test Job on Ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Execute Echo 1
+        run: echo "Test Echo 1"
+      
+      - name: Execute Echo 2
+        run: echo "Test Echo 2"
