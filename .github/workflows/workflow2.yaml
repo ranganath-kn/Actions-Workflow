@@ -1,0 +1,18 @@
+name: Second Workflow
+on: [push]
+
+jobs:
+  Test-Job-On-Windows:
+    runs-on: windows-latest
+    steps:
+        - name: Latest Output 1
+          run: Write-Output "Test 1 Windows"
+
+        - name: Latest Output 2
+          run: Write-Output "Test 2 Windows"
+
+  Test-Job-On-Ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+        - name: Latest Ubuntu 1
+          run: echo "Ubuntu 2"
