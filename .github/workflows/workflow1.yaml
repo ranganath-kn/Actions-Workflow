@@ -2,7 +2,7 @@ name: Initial Workflow
 on: [push]
 
 jobs:
-  Test Job on Windows:
+  Test_Job_on_Windows:
     runs-on: windows-latest
     steps:
       - name: Execute Statement1
@@ -11,7 +11,7 @@ jobs:
       - name: Execute Statement2
         run: Write-Host "Statement 2 Execute"
 
-  Test Job on Ubuntu:
+  Test_Job_on_Ubuntu:
     runs-on: ubuntu-latest
     steps:
       - name: Execute Echo 1
